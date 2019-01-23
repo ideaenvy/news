@@ -948,3 +948,25 @@ header {
   transition: all .3s ease 0s;
   width: 32px;
 }
+
+table{
+  width: 100%;
+  .header{
+    th{
+      background: #333;
+      color: #fff;
+      font-weight: 700;
+      padding: 20px 0;
+    }
+  }
+  tr:nth-of-type(odd) {
+    background: #eee;
+  }
+  td, th {
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  td {
+    padding: 15px 0;
+  }
+}

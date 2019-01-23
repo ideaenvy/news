@@ -36,18 +36,29 @@ function myFunctionsu(x) {
        
         $('#header-nav').addClass('bg-dark_grey');
         $('.navbar-toggler').addClass('collapsed');
-
+        $('#logo-large').addClass('d-none');
+        $('#logo-small').removeClass('d-none');
         
     } else {
         
         $('#header-nav').removeClass('bg-dark_grey');
+        $('#logo-small').addClass('d-none');
+        $('#logo-large').removeClass('d-none');
         $('.navbar-toggler').removeClass('collapsed');
         
         $(window).bind('scroll', function () {
             if ($(window).scrollTop() > 70) {
                 $('#header-nav').addClass('bg-dark_grey');
+                $('#logo-large').addClass('d-none');
+                $('#logo-large').removeClass('d-inline-block');
+                $('#logo-small').addClass('d-inline-block');
+                $('#logo-small').removeClass('d-none');
             } else {
                 $('#header-nav').removeClass('bg-dark_grey');
+                $('#logo-small').addClass('d-none');
+                $('#logo-small').removeClass('d-inline-block');
+                $('#logo-large').addClass('d-inline-block');
+                $('#logo-large').removeClass('d-none');
             }
         });
     }

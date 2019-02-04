@@ -780,6 +780,7 @@ header {
   .page-details{
     // background: #0000001f;
     padding: 20px;
+    margin-left: -15%;
     p{
       color: #fff;
     }
@@ -863,7 +864,7 @@ header {
     }
 }
 .page-section {
-  padding: 60px 0;
+  padding: 30px 0;
   .section-heading {
     font-weight: 400;
     text-align: center;
@@ -974,9 +975,15 @@ table{
   margin: 0 15px;
 }
 .subscribe{
-  background: #ccc;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 20px;
+  padding: 20px;
+  p{
+    color: inherit;
+  }
+}
+table{
+  margin-bottom: 1rem;
 }
